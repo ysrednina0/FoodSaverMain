@@ -272,7 +272,7 @@
                         <Insets top="25.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleButtonProfile" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" text="settings">
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" text="settings">
                      <graphic>
                         <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>

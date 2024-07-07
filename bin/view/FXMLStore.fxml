@@ -16,7 +16,7 @@
 
 <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1280.0" stylesheets="@assets/css/styleStore.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLStoreController">
    <center>
-      <AnchorPane prefHeight="828.0" prefWidth="1100.0" style="-fx-background-color: F8F9FA;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="830.0" prefWidth="1100.0" style="-fx-background-color: F8F9FA;" BorderPane.alignment="CENTER">
          <children>
             <TableView fx:id="productTable" layoutX="79.0" layoutY="203.0" prefHeight="555.0" prefWidth="510.0">
               <columns>
@@ -54,7 +54,7 @@
          </children></AnchorPane>
    </center>
    <left>
-      <AnchorPane prefHeight="828.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="830.0" prefWidth="190.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="65.0" fitWidth="170.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -70,7 +70,7 @@
                   </DropShadow>
                </effect>
                <children>
-                  <Button layoutX="14.0" layoutY="70.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="106.0" styleClass="navbarButton" text="     Chart" textFill="#a0aec0">
+                  <Button layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onAction="#directToChart" prefHeight="33.0" prefWidth="106.0" styleClass="navbarButton" text="     Chart" textFill="#a0aec0">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -85,7 +85,7 @@
                         <Insets />
                      </opaqueInsets>
                   </Button>
-                  <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="141.0" styleClass="navbarButton" text="     Dashboard" textFill="#a0aec0">
+                  <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#directToStore" prefHeight="33.0" prefWidth="141.0" styleClass="navbarButton" text="     Dashboard" textFill="#a0aec0">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>

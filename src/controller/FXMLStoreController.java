@@ -112,6 +112,20 @@ public class FXMLStoreController implements Initializable {
     }
 
     @FXML
+    private void directToStore() {
+        Pane page = openScene.getPane("/view/FXMLStore.fxml");
+        mainPane.setLeft(page);
+        System.out.println("Direct to store!");
+      }
+
+    @FXML
+    private void directToChart() {
+        Pane page = openScene.getPane("/view/FXMLChart.fxml");
+        mainPane.setCenter(page);
+        System.out.println("Direct to chart!");
+      }
+
+    @FXML
     private void logoutButton() {
         Pane page = openScene.getPane("/view/FXMLLogin.fxml");
         mainPane.setLeft(page);

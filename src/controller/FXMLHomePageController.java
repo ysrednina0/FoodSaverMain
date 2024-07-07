@@ -22,9 +22,6 @@ public class FXMLHomePageController implements Initializable {
     @FXML
     private TextField searchFoodField;
 
-    // @FXML
-    // private TextField searchLocationField;
-
     @FXML
     private Button buttonOmahKatsu;
 
@@ -42,18 +39,6 @@ public class FXMLHomePageController implements Initializable {
         System.out.println("Setting Button is clicked!");
     }
 
-    // @FXML
-    // private void handleButtonDonation(ActionEvent event) {
-
-    // System.out.println("Donation Button 2 is clicked!");
-    // }
-
-    // @FXML
-    // void searchFood(ActionEvent event) {
-    // String food = searchFoodField.getText();
-    // System.out.println("Searching for foocostumercostumerd: " + food);
-    // }
-
     @FXML
     private void logoutButton() {
         Pane page = openScene.getPane("/view/FXMLLogin.fxml");
@@ -66,13 +51,6 @@ public class FXMLHomePageController implements Initializable {
         Pane page = openScene.getPane("/view/FXMLHistory.fxml");
         mainPane.setCenter(page);
         System.out.println("History Button is clicked!");
-    }
-
-    @FXML
-    private void handleButtonProfile(ActionEvent event) {
-        Pane page = openScene.getPane("/view/FXMLCustProfile.fxml");
-        mainPane.setCenter(page);
-        System.out.println("Profile Button is clicked!");
     }
 
     @FXML
