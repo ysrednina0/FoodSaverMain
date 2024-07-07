@@ -1,0 +1,40 @@
+.restaurant {
+  -fx-border-radius: 15px;
+  -fx-background-color: white;
+  -fx-border-color: #E9E9E9;
+  -fx-border-width: 2px;
+}
+/* 
+.navBar {
+  -fx-background: #F2F2F2;
+  -fx-effect: dropshadow(gaussian, rgba(137, 137, 137, 0.5), 10, 0.2, 0, 0);
+} */
+
+.navbarButton {
+  /* -fx-border-radius: 99px; */
+  -fx-background-color: #f3f3f3;
+  -fx-border-color: transparent;
+  -fx-border-radius: 999px;
+  -fx-background-radius:999px;
+}
+
+.kategoriButton {
+  -fx-background-color: #FFFFFF;
+  -fx-border-color: #f4940e;
+  -fx-border-width: 1px;
+  -fx-border-radius: 5px;
+
+  /* -fx-font-weight: 650; */
+  /* -fx-font-family: inter; */
+}
+
+.navbarButton:hover {
+  -fx-background-color: #f4940e;
+
+  /* -fx-text-fill: white; */
+}
+
+.kategoriButton:hover {
+  -fx-background-color: #eaeaea;
+  /* -fx-text-fill: white; */
+}

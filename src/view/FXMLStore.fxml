@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1280.0" stylesheets="@assets/css/styleStore.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLStoreController">
+   <center>
+      <AnchorPane prefHeight="828.0" prefWidth="1100.0" style="-fx-background-color: F8F9FA;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="productTable" layoutX="79.0" layoutY="203.0" prefHeight="555.0" prefWidth="510.0">
+              <columns>
+                <TableColumn fx:id="namaProduk" minWidth="250.0" onEditCommit="#onEditName" prefWidth="75.0" text="Product Name" />
+                <TableColumn fx:id="hargaProduk" minWidth="250.0" onEditCommit="#onEditPrice" prefWidth="75.0" text="Price" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="733.0" layoutY="203.0" prefHeight="259.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <TextField fx:id="tfNamaProduk" layoutX="38.0" layoutY="44.0" prefHeight="32.0" prefWidth="177.0" />
+                  <TextField fx:id="tfHargaProduk" layoutX="38.0" layoutY="110.0" prefHeight="32.0" prefWidth="177.0" />
+                  <Label layoutX="38.0" layoutY="26.0" text="Product Name" />
+                  <Label layoutX="38.0" layoutY="92.0" text="Price" />
+                  <Button fx:id="deleteProduct" layoutX="79.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonDeleteProduct" prefHeight="25.0" prefWidth="96.0" text="Delete Product" />
+                  <Button fx:id="addProduct" layoutX="79.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleButtonAddProduct" prefHeight="25.0" prefWidth="96.0" text="Add Product" />
+               </children>
+               <effect>
+                  <DropShadow height="4.0" offsetY="2.0" radius="1.4725000000000001" width="3.89">
+                     <color>
+                        <Color opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Label layoutX="98.0" layoutY="27.0" text="STORE DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="71.0" fitWidth="915.0" layoutX="73.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icon/Group%201357.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="828.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="170.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icon/Group%201356.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="10.0" layoutY="88.0" prefHeight="120.0" prefWidth="170.0" style="-fx-background-color: ffffff; -fx-background-radius: 15px;">
+               <effect>
+                  <DropShadow height="4.33" offsetY="2.0" radius="1.5550000000000002" width="3.89">
+                     <color>
+                        <Color red="0.48245614767074585" green="0.48245614767074585" blue="0.48245614767074585" opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Button layoutX="14.0" layoutY="70.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="106.0" styleClass="navbarButton" text="     Chart" textFill="#a0aec0">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/chart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="141.0" styleClass="navbarButton" text="     Dashboard" textFill="#a0aec0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/House_01%20orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="231.0" prefHeight="120.0" prefWidth="170.0" style="-fx-background-color: ffffff; -fx-background-radius: 15px;">
+               <effect>
+                  <DropShadow height="4.11" offsetY="2.0" radius="1.5" width="3.89">
+                     <color>
+                        <Color red="0.48235294222831726" green="0.48235294222831726" blue="0.48235294222831726" opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Button layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="34.0" prefWidth="131.0" styleClass="navbarButton" text="     Sign Out" textFill="#a0aec0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Log_Out%20orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="16.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="119.0" styleClass="navbarButton" stylesheets="@assets/style.css" text="     Profile" textFill="#a0aec0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

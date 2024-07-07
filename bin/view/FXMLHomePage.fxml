@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1280.0" style="-fx-background-color: ffffff;" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLHomePageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="357.0" fitWidth="1171.0" layoutX="15.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pics/pexels-alexy-almond-3756523m.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="14.0" layoutY="469.0" prefHeight="10.0" prefWidth="1155.0" />
+            <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="41.0" layoutY="502.0" mnemonicParsing="false" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="1">
+               <graphic>
+                  <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/pics/0ef1f77f5e929879912ebe2ebac05b01.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="57.0" layoutY="708.0" text="Serabi Notosuman">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="737.0" text="0.2 km">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="325.0" layoutY="712.0" text="4.5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <HBox layoutX="43.0" layoutY="421.0" prefHeight="31.0" prefWidth="445.0">
+               <children>
+                  <Button mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Nearby">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Pin_alt.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Best Seller">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Frame_orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="117.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Promo">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="198.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Top Rated">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Star.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="24.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pic/Orange%20Brown%20White%20Mexican%20Taco%20Restaurant%20Food%20Logo%20(2).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonOmahKatsu" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="426.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonOmahKatsu" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
+               <graphic>
+                  <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/pics/katsu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="441.0" layoutY="708.0" text="Omah Katsu">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="737.0" text="1.4 km">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="708.0" layoutY="712.0" text="4.7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="815.0" layoutY="502.0" mnemonicParsing="false" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
+               <graphic>
+                  <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/pics/dimsum.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="831.0" layoutY="708.0" text="Dimsum Bu Rudi">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="829.0" layoutY="737.0" text="1.4 km">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="1099.0" layoutY="712.0" text="4.7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="1099.0" layoutY="15.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/search%20icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="searchFoodField" layoutX="900.0" layoutY="19.0" prefHeight="25.0" prefWidth="199.0" promptText="Search" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="836.0" prefWidth="80.0" style="-fx-background-color: F3F3F3; -fx-border-color: eaeaea;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="1.0" layoutY="248.0" prefHeight="200.0" prefWidth="80.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleButtonHome" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" stylesheets="@style.css" text="home">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/House_01.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleButtonHistory" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" stylesheets="@style.css" text="donate">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/File_Document.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleButtonSettings" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" text="history">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#handleButtonProfile" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" text="settings">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/User_cicrle_light.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#logoutButton" prefHeight="30.0" prefWidth="32.0" styleClass="navbarButton" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Log_Out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLRegisterController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="830.0" prefWidth="1280.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="700.0" onDragDetected="#handleLoginHyperlink" prefHeight="830.0" prefWidth="580.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextField fx:id="txtName" layoutX="115.0" layoutY="251.0" prefHeight="25.0" prefWidth="349.0" promptText="Nama" />
+                        <Label layoutX="229.0" layoutY="116.0" text="Sign Up">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUsername" layoutX="115.0" layoutY="313.0" prefHeight="25.0" prefWidth="349.0" promptText="Username" />
+                        <TextField fx:id="txtEmail" layoutX="115.0" layoutY="377.0" prefHeight="25.0" prefWidth="349.0" promptText="Email" />
+                        <Button fx:id="registerButton" layoutX="115.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="33.0" prefWidth="349.0" style="-fx-background-color: ED801B; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Button>
+                        <PasswordField fx:id="txtPassword" layoutX="115.0" layoutY="440.0" prefWidth="349.0" promptText="Password" />
+                        <PasswordField fx:id="txtConfirmPassword" layoutX="115.0" layoutY="504.0" prefWidth="349.0" promptText="Confirm Password" />
+                        <Label layoutX="202.0" layoutY="655.0" text="Already have an account?" />
+                        <Hyperlink fx:id="loginHyperlink" layoutX="339.0" layoutY="652.0" onAction="#handleLoginHyperlink" text="Login" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label layoutX="117.0" layoutY="233.0" text="Nama" />
+                        <Label layoutX="117.0" layoutY="359.0" text="Email" />
+                        <Label layoutX="117.0" layoutY="295.0" text="Username" />
+                        <Label layoutX="117.0" layoutY="486.0" text="Confirm Password" />
+                        <Label layoutX="117.0" layoutY="422.0" text="Password" />
+                        <RadioButton fx:id="rbCustomer" layoutX="127.0" layoutY="552.0" mnemonicParsing="false" text="Customer">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="role" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rbStore" layoutX="244.0" layoutY="552.0" mnemonicParsing="false" text="Store" toggleGroup="$role" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="830.0" prefWidth="700.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="256.0" fitWidth="281.0" layoutX="247.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/pics/Rectangle%2064.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

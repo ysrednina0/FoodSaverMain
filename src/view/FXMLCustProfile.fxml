@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLCustProfileController">
+   <bottom>
+      <AnchorPane prefHeight="830.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="55.0" layoutY="46.0" text="PROFILE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <GridPane alignment="CENTER" hgap="10" layoutX="55.0" layoutY="115.0" prefHeight="339.0" prefWidth="591.0" vgap="10">
+               <padding>
+                  <Insets bottom="20" left="20" right="20" top="20" />
+               </padding>
+               <children>
+                  <Label text="Name:" />
+                  <TextField fx:id="nameField" prefHeight="35.0" GridPane.columnIndex="1" />
+                  <Label text="Username:" GridPane.rowIndex="1" />
+                  <TextField fx:id="usernameField" prefHeight="35.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Email:" GridPane.rowIndex="2" />
+                  <TextField fx:id="emailField" prefHeight="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEditProfileButton" text="Edit Profile" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="Phone:" GridPane.rowIndex="3" />
+                  <Label text="Addres:" GridPane.rowIndex="4" />
+                  <TextField fx:id="phoneField" prefHeight="35.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="addresField" prefHeight="35.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints maxWidth="75.33331298828125" minWidth="61.33331298828125" prefWidth="70.6666259765625" />
+                  <ColumnConstraints maxWidth="400.0" minWidth="254.0000203450521" prefWidth="400.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints maxHeight="64.66665649414065" minHeight="4.666656494140625" prefHeight="35.0" />
+                  <RowConstraints maxHeight="66.66666666666666" minHeight="10.0" prefHeight="35.0" />
+                  <RowConstraints maxHeight="66.66666666666666" minHeight="2.0000101725260038" prefHeight="35.0" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

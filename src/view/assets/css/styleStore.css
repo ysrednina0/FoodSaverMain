@@ -1,0 +1,16 @@
+.navbarButton {
+  /* -fx-border-radius: 99px; */
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-border-radius: 999px;
+  -fx-background-radius:999px;
+  -fx-text-fill: #a0aec0;
+}
+
+.navbarButton:hover {
+  -fx-background-color: #f4940e62;
+  -fx-text-fill: white;
+  /* -fx-font-color: rgb(255, 255, 255); */
+
+  /* -fx-text-fill: white; */
+}
