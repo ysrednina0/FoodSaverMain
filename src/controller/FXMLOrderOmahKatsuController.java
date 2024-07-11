@@ -34,7 +34,7 @@ import com.thoughtworks.xstream.io.xml.StaxDriver;
 
 import etc.OpenScene;
 
-public class FXMLOrderPageController implements Initializable {
+public class FXMLOrderOmahKatsuController implements Initializable {
     // ObservableList<String> list = FXCollections.observableArrayList();
     OpenScene openScene = new OpenScene();
 
@@ -322,7 +322,7 @@ public class FXMLOrderPageController implements Initializable {
         totalHarga.setCellValueFactory(new PropertyValueFactory<OrderData, String>("TotalHarga"));
         orderTable.setItems(od);
 
-        namaProduk.setCellFactory(TextFieldTableCell.forTableColumn());
+        // namaProduk.setCellFactory(TextFieldTableCell.forTableColumn());
         jumlahProduk.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
         orderTable.setEditable(true);
 

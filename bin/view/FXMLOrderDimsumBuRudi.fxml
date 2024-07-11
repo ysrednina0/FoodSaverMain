@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLOrderPageController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLOrderDimsumBuRudiController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -24,12 +24,12 @@
                <children>
                   <AnchorPane layoutY="72.0" prefHeight="266.0" prefWidth="1200.0" style="-fx-background-color: eaeaea;">
                      <children>
-                        <Label layoutX="448.0" layoutY="39.0" prefHeight="50.0" prefWidth="207.0" text="Omah Katsu">
+                        <Label layoutX="448.0" layoutY="39.0" prefHeight="50.0" prefWidth="301.0" text="Dimsum Bu Rudi">
                            <font>
                               <Font name="System Bold" size="34.0" />
                            </font>
                         </Label>
-                        <Label layoutX="448.0" layoutY="93.0" text=" 4,5">
+                        <Label layoutX="448.0" layoutY="93.0" text=" 4.9">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -46,7 +46,7 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="683.0" layoutY="89.0" prefHeight="28.0" prefWidth="95.0" text="  0.2 km">
+                        <Label layoutX="683.0" layoutY="89.0" prefHeight="28.0" prefWidth="95.0" text="  1.4 km">
                            <graphic>
                               <ImageView fitHeight="19.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -60,7 +60,7 @@
                         </Label>
                         <ImageView fitHeight="227.0" fitWidth="441.0" layoutX="13.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@assets/pics/katsu.png" />
+                              <Image url="@assets/pics/Rectangle%2058.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -71,7 +71,7 @@
                   <Separator layoutX="14.0" layoutY="335.0" prefHeight="6.0" prefWidth="1115.0" />
                   <TableView fx:id="orderTable" layoutX="501.0" layoutY="363.0" prefHeight="384.0" prefWidth="622.0">
                     <columns>
-                      <TableColumn fx:id="namaProduk" onEditCommit="#onEditName" prefWidth="200.0" text="Product Name" />
+                      <TableColumn fx:id="namaProduk" prefWidth="200.0" text="Product Name" />
                       <TableColumn fx:id="hargaProduk" prefWidth="140.0" text="Price" />
                         <TableColumn fx:id="jumlahProduk" onEditCommit="#onEditAmount" prefWidth="140.0" text="Qty" />
                         <TableColumn fx:id="totalHarga" prefWidth="140.0" text="Total" />

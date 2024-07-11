@@ -23,7 +23,61 @@
                </image>
             </ImageView>
             <Separator layoutX="14.0" layoutY="469.0" prefHeight="10.0" prefWidth="1155.0" />
-            <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="41.0" layoutY="502.0" mnemonicParsing="false" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="1">
+            <ImageView fitHeight="36.0" fitWidth="76.0" layoutX="24.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icon/logoooo.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="43.0" layoutY="421.0" prefHeight="31.0" prefWidth="445.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButtonNearby" styleClass="kategoriButton" stylesheets="@style.css" text="Nearby">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Pin_alt.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Best Seller">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Frame_orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="117.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Promo">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/promoo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="198.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Top Rated">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Star.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="buttonSerabi" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="426.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonSerabiNotosuman" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="1">
                <graphic>
                   <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -41,7 +95,54 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Label layoutX="57.0" layoutY="708.0" text="Serabi Notosuman">
+            <Label layoutX="441.0" layoutY="708.0" text="Serabi Notosuman">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="737.0" text="1.7 km">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="708.0" layoutY="712.0" text="4.7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="buttonOmahKatsu" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="41.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonOmahKatsu" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
+               <graphic>
+                  <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/pics/katsu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="57.0" layoutY="708.0" text="Omah Katsu">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -70,108 +171,7 @@
                   </ImageView>
                </graphic>
             </Label>
-            <HBox layoutX="43.0" layoutY="421.0" prefHeight="31.0" prefWidth="445.0">
-               <children>
-                  <Button mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Nearby">
-                     <HBox.margin>
-                        <Insets right="30.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@assets/icon/Pin_alt.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Best Seller">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@assets/icon/Frame_orange.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <HBox.margin>
-                        <Insets right="30.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button layoutX="117.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Promo">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@assets/icon/Icon.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <HBox.margin>
-                        <Insets right="30.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button layoutX="198.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Top Rated">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@assets/icon/Star.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-               </children>
-            </HBox>
-            <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="24.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/pic/Orange%20Brown%20White%20Mexican%20Taco%20Restaurant%20Food%20Logo%20(2).png" />
-               </image>
-            </ImageView>
-            <Button fx:id="buttonOmahKatsu" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="426.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonOmahKatsu" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
-               <graphic>
-                  <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/pics/katsu.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
-            <Label layoutX="441.0" layoutY="708.0" text="Omah Katsu">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="441.0" layoutY="737.0" text="1.4 km">
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/icon/loc.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Label>
-            <Label layoutX="708.0" layoutY="712.0" text="4.7">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/icon/Star.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Label>
-            <Button alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="815.0" layoutY="502.0" mnemonicParsing="false" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
+            <Button fx:id="buttonDimsum" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="815.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonDimsum" prefHeight="270.0" prefWidth="347.0" styleClass="restaurant" stylesheets="@style.css" text="2">
                <graphic>
                   <ImageView fitHeight="179.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -206,7 +206,7 @@
                   </ImageView>
                </graphic>
             </Label>
-            <Label layoutX="1099.0" layoutY="712.0" text="4.7">
+            <Label layoutX="1099.0" layoutY="712.0" text="4.9">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

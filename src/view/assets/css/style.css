@@ -38,3 +38,9 @@
   -fx-background-color: #eaeaea;
   /* -fx-text-fill: white; */
 }
+
+.nearbyButton {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 15px ;
+
+}

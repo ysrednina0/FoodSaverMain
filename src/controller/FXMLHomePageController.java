@@ -26,6 +26,12 @@ public class FXMLHomePageController implements Initializable {
     private Button buttonOmahKatsu;
 
     @FXML
+    private Button buttonSerabi;
+
+    @FXML
+    private Button buttonDimsum;
+
+    @FXML
     private void handleButtonHome(ActionEvent event) {
         Pane page = openScene.getPane("/view/FXMLHomePage.fxml");
         mainPane.setLeft(page);
@@ -54,10 +60,31 @@ public class FXMLHomePageController implements Initializable {
     }
 
     @FXML
+    private void handleButtonNearby(ActionEvent event) {
+        Pane page = openScene.getPane("/view/FXMLNearby.fxml");
+        mainPane.setCenter(page);
+        System.out.println("Nearby Button is clicked!");
+    }
+
+    @FXML
     private void handleButtonOmahKatsu(ActionEvent event) {
-        Pane page = openScene.getPane("/view/FXMLOrderPage.fxml");
+        Pane page = openScene.getPane("/view/FXMLOrderOmahKatsu.fxml");
         mainPane.setCenter(page);
         System.out.println("Omah Katsu Button is clicked!");
+    }
+
+    @FXML
+    private void handleButtonSerabiNotosuman(ActionEvent event) {
+        Pane page = openScene.getPane("/view/FXMLOrderSerabiNotosuman.fxml");
+        mainPane.setCenter(page);
+        System.out.println("Serabi Button is clicked!");
+    }
+
+    @FXML
+    private void handleButtonDimsum(ActionEvent event) {
+        Pane page = openScene.getPane("/view/FXMLOrderDimsumBuRudi.fxml");
+        mainPane.setCenter(page);
+        System.out.println("Serabi Button is clicked!");
     }
 
     @Override

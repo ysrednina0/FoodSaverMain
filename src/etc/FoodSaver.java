@@ -10,7 +10,9 @@ public class FoodSaver extends Application{
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("/view/FXMLLogin.fxml"));
+    // Parent root = FXMLLoader.load(getClass().getResource("/view/FXMLLogin.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("/view/FXMLHomePage.fxml"));
+
     
     Scene scene = new Scene(root);
 
