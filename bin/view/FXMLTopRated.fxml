@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1200.0" stylesheets="@assets/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLTopRatedController">
+   <center>
+      <AnchorPane prefHeight="830.0" prefWidth="1200.0" style="-fx-background-color: F8F9FA;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="67.0" layoutY="41.0" text="Top Rated">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonDimsum" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleButtonDimsum" prefHeight="200.0" prefWidth="1113.0" styleClass="nearbyButton" text="Button">
+               <effect>
+                  <DropShadow height="3.91" offsetY="2.0" radius="1.4500000000000002" width="3.89">
+                     <color>
+                        <Color red="0.4699999988079071" green="0.4699999988079071" blue="0.4699999988079071" opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="218.0" fitWidth="266.0" layoutX="61.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pics/dimsum.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="362.0" layoutY="140.0" text="Dimsum Bu Rudi">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="195.0" text="4.9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="447.0" layoutY="195.0" text="1.4 km">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="buttonSerabi" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonSerabiNotosuman" prefHeight="200.0" prefWidth="1113.0" styleClass="nearbyButton" text="Button">
+               <effect>
+                  <DropShadow height="3.91" offsetY="2.0" radius="1.4500000000000002" width="3.89">
+                     <color>
+                        <Color red="0.4699999988079071" green="0.4699999988079071" blue="0.4699999988079071" opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="218.0" fitWidth="266.0" layoutX="61.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pics/0ef1f77f5e929879912ebe2ebac05b01.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="362.0" layoutY="363.0" text="Serabi Notosuman">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="418.0" text="4.7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="447.0" layoutY="418.0" text="1.7 km">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="buttonOmahKatsu" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="562.0" mnemonicParsing="false" onAction="#handleButtonOmahKatsu" prefHeight="200.0" prefWidth="1113.0" styleClass="nearbyButton" text="Button">
+               <effect>
+                  <DropShadow height="3.91" offsetY="2.0" radius="1.4500000000000002" width="3.89">
+                     <color>
+                        <Color red="0.4699999988079071" green="0.4699999988079071" blue="0.4699999988079071" opacity="0.12999999523162842" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="218.0" fitWidth="266.0" layoutX="61.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pics/katsu.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="362.0" layoutY="587.0" text="Omah Katsu">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="642.0" text="4.5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Star.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="447.0" layoutY="642.0" text="0.2 km">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/icon/Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

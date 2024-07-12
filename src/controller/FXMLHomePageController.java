@@ -67,6 +67,13 @@ public class FXMLHomePageController implements Initializable {
     }
 
     @FXML
+    private void handleButtonTopRated(ActionEvent event) {
+        Pane page = openScene.getPane("/view/FXMLTopRated.fxml");
+        mainPane.setCenter(page);
+        System.out.println("Top Rated Button is clicked!");
+    }
+
+    @FXML
     private void handleButtonOmahKatsu(ActionEvent event) {
         Pane page = openScene.getPane("/view/FXMLOrderOmahKatsu.fxml");
         mainPane.setCenter(page);

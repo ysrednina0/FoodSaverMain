@@ -42,6 +42,18 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Button layoutX="198.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonTopRated" styleClass="kategoriButton" stylesheets="@style.css" text="Top Rated">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/icon/Star.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
                   <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Best Seller">
                      <graphic>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
@@ -63,17 +75,8 @@
                         </ImageView>
                      </graphic>
                      <HBox.margin>
-                        <Insets right="30.0" />
+                        <Insets />
                      </HBox.margin>
-                  </Button>
-                  <Button layoutX="198.0" layoutY="10.0" mnemonicParsing="false" styleClass="kategoriButton" stylesheets="@style.css" text="Top Rated">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@assets/icon/Star.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
                   </Button>
                </children>
             </HBox>
